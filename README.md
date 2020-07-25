@@ -1,6 +1,6 @@
 # golang-practice
 
 - 1.4 Dynamic GIF lissajous
-  - type in command  `./main >practice.gif`
+  - Command  `./main >practice.gif`
 - 1.5 Fetch URL
-  - ./main www.google.com.tw
+  - Command  `./main www.google.com.tw`
