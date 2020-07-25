@@ -1,3 +1,3 @@
 # golang-practice
 
-#1.4 Dynamic GIF lissajous
+1. 1.4 Dynamic GIF lissajous
