@@ -13,3 +13,7 @@
   - Command  `./main -s / a bc def`
   - Command  `./main -n a bc def`
   - Command  `./main -help`
+-3.2 Float
+  - Command  `./main >practice.svg`
+  - Command  `./main eggBox >eggBox.svg`
+  - Command  `./main`
