@@ -17,3 +17,5 @@
   - Command  `./main >practice.svg`
   - Command  `./main eggBox >eggBox.svg`
   - Command  `./main`
+- 4.1 Array
+  - Command  `./main`
