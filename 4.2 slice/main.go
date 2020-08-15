@@ -39,4 +39,4 @@ func reverse(s []int) {
 
 // 3. make function 建構指定 型別、長度、容量的 slice. 容量可省略，則容量 = 長度
 // make([]T, len)
-// make([]T, len, cap) = make([]T,
+// make([]T, len, cap) = make([]T, cap)[:len]
