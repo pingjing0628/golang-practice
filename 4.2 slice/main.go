@@ -37,6 +37,6 @@ func reverse(s []int) {
 // The only valid comparsion in slice is compare with the nil.
 // If you want to test a slice is nil or not, you should use len(s) == 0 not s == nil.
 
-// 3. make function 建構指定 型別、長度、容量的 slice. 容量可省略，則容量 = 長度
+// 3. slice 可以在執行期動態產生，使用 make function 建構指定 型別、長度、容量的 slice. 容量可省略，則容量 = 長度
 // make([]T, len)
 // make([]T, len, cap) = make([]T, cap)[:len]
