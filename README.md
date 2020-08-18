@@ -19,3 +19,8 @@
   - Command  `./main`
 - 4.1 Array
   - Command  `./main`
+- 4.3 Map
+  - Ex4.8
+    - Command  `./main1 < in.txt` or `go run main1.go < in.txt`
+  - Ex4.9
+    - Command  `./main2 file.txt` or `go run main2.go file.txt`
