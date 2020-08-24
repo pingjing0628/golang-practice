@@ -24,3 +24,6 @@
     - Command  `./main1 < in.txt` or `go run main1.go < in.txt`
   - Ex4.9
     - Command  `./main2 file.txt` or `go run main2.go file.txt`
+- 4.5 Json
+  - Practice Search bug record about Go and Json decoder
+    Command  `./main repo:golang/go is:open json decoder`
