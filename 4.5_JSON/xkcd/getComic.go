@@ -17,7 +17,7 @@ func GetComic(comicId int) (*Comic, error) {
 	if resp.StatusCode != http.StatusOK {
 		resp.Body.Close()
 
-		return nil, fmt.Errorf("Get comic failed: %s", resp.Status)
+		return nil, fmt.Errorf("get comic failed: %s", resp.Status)
 	}
 
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
