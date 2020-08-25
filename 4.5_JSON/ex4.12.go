@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	maxComicId = 1833
+	maxComicId = 403
 )
 
 var fetchFlag = flag.Bool("fetch", false, "fetch all comics")
