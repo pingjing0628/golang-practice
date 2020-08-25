@@ -13,6 +13,6 @@ type Movie struct {
 
 // Call API
 func searchURL(terms []string) string {
-	return fmt.Sprintf("https://www.omdbapi.com/?t=%s", url.QueryEscape(strings.Join(terms, " ")))
+	return fmt.Sprintf("http://www.omdbapi.com/?t=%s", url.QueryEscape(strings.Join(terms, " ")))
 }
 
