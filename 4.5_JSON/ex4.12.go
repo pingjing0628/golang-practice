@@ -13,11 +13,15 @@ const (
 	maxComicId = 403
 )
 
+// Bool defines a bool flag with specified name, default value, and usage string
+// The return value is the address of a bool variable that stores the value of the flag
 var fetchFlag = flag.Bool("fetch", false, "fetch all comics")
 
+// Get new response
 func fetch()  {
 	comicIndex := xkcd.NewComicIndex()
 
+	// xkcd api
 	for comicId := 1; comicId <= maxComicId; comicId++ {
 		comic, err := xkcd.GetComic(comicId)
 
@@ -38,6 +42,7 @@ func fetch()  {
 	}
 }
 
+// Search for the query
 func search(terms []string)  {
 	index, err := ioutil.ReadAll(os.Stdin)
 
@@ -70,12 +75,15 @@ func printComic(comic *xkcd.Comic)  {
 	fmt.Printf("\nTranscript:\n%s\n", comic.Transcript)
 }
 
-func main()  {
+func main() {
+	// Parse parses the command line from os.Args[1:]
+	// Must be called after all flags are defined and before flags are accessed by the program
 	flag.Parse()
 
 	if *fetchFlag {
 		fetch()
 	} else {
+		// Args returns the non-flag command line arguments
 		if len(flag.Args()) < 1 {
 			fmt.Fprintln(os.Stderr, "must have at least 1 query")
 			os.Exit(1)

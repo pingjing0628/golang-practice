@@ -23,6 +23,7 @@ type Comic struct {
 	Day        string
 }
 
+// Call API
 func getComicURL(comicId int) string {
 	return fmt.Sprintf("https://xkcd.com/%s/info.0.json", strconv.Itoa(comicId))
 }
