@@ -27,3 +27,12 @@
 - 4.5 Json
   - Practice Search bug record about Go and Json decoder
     Command  `./main repo:golang/go is:open json decoder`
+  - Ex4.12
+    - Fetch url Command  `./ex4.12 -fetch > index/index.json`
+    - Search Command `./ex4.12 "Sleep" < index/index.json`
+    - Search Command `./ex4.12 "Can't" "Sleep" < index/index.json`
+  - Ex4.13
+    - Search Command `./ex4.13 "Social Network" > image/social_network.jpg`
+- 4.6 HTML
+  - Ex4.14
+    - Command `./ex4.14 airbnb javascript`
