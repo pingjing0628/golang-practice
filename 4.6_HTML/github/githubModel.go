@@ -37,6 +37,7 @@ func getIssueURL(owner, repo string) string {
 	return fmt.Sprintf("https://api.github.com/repos/%s/%s/issues?state=all", owner, repo)
 }
 
+// 回傳是否可以認為他等於給定的 user
 func (u *User) Equals(x *User) bool {
 	return u.ID == x.ID
 }

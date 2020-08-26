@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// 從指定的 repository 中取得固定數量的 issue
 func GetIssues(owner, repo string) ([]Issue, error) {
 	var issues []Issue
 	req, err := http.NewRequest("GET", getIssueURL(owner, repo), nil)
