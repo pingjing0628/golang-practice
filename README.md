@@ -36,3 +36,6 @@
 - 4.6 HTML
   - Ex4.14
     - Command `./ex4.14 airbnb javascript`
+- 5.2 Recursive
+  - Ex5.1/Ex5.2/Ex5.3/Ex5.4
+    - Command `go run main.go < example/ex.html`
