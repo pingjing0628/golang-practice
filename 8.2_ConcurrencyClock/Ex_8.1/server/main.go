@@ -1,4 +1,4 @@
-package Ex_8_1
+package server
 
 import (
 	"flag"

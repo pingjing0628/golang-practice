@@ -24,12 +24,12 @@ func main()  {
 			continue
 		}
 
-		go handleConne(conn) // 並行處理連線
+		go handleConnection(conn) // 並行處理連線
 	}
 }
 
 // 處理用戶端連線
-func handleConne(c net.Conn)  {
+func handleConnection(c net.Conn)  {
 	defer c.Close()
 
 	for {

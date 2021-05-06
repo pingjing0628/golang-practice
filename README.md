@@ -39,3 +39,14 @@
 - 5.2 Recursive
   - Ex5.1/Ex5.2/Ex5.3/Ex5.4
     - Command `go run main.go < example/ex.html`
+- 8.2 Concurrency Clock
+  - Ex: clock1
+    - Command `./clock1 & nc localhost 7000`
+    - `nc`(netcat)操控網路連線的工具程式
+    - Command `killall clock1`
+  - Ex: netcat1
+    - Command `./netcat1`
+  - Ex: clock2
+      - Command `./clock2 & ./netcat1` 
+  - Ex: 8.1
+      - Command ``

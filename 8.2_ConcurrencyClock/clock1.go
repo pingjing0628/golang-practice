@@ -9,6 +9,7 @@ import (
 // 週期性輸出時間的 TCP 伺服器
 // Print out current time each second
 func main()  {
+	// Listen 建構傾聽網路埠連線的 net.Listener 物件
 	listener, err := net.Listen("tcp", "localhost:7000")
 
 	if err != nil {
@@ -23,7 +24,7 @@ func main()  {
 			log.Print(err) // Ex: give up to connect
 			continue
 		}
-
+		// 回傳代表連線的 net.Conn物件
 		handleConn(conn) // Deal with one connection once a time
 	}
 }
