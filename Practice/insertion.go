@@ -18,7 +18,7 @@ func insert(current int, num []int, previousOne int)  {
 
 func main()  {
 	num := []int{26, 5, 33, 17, 2}
-	fmt.Println("Before sort: ", num)
+	fmt.Println("Before insertion sort: ", num)
 	insertSort(num)
 	fmt.Println(num)
 }
